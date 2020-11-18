@@ -1,0 +1,81 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f3f3f3;
+}
+
+.cards,
+.card-actions,
+.action{
+    display: flex;
+    align-items: center;
+}
+
+/* Contenedor de las tarjetas */
+.cards{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 2rem;
+    flex-basis: content;
+}
+
+/* Tarjeta */
+.card{
+    background-color: #fff;
+    width: 320px;
+    padding: 16px;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 15px;
+}
+
+/* Título */
+.card-title{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Imagen */
+.card-image{
+    width: 100%;
+    height: 180px;
+}
+
+/* Acciones */
+.card-actions{
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Iconos y texto */
+.action{
+    justify-content: space-evenly;
+    width: 60px;
+    color: #38a8e0;
+    transition: color .5s ease;
+}
+
+/* Icono de Twitter */
+.card-icon{
+    position: absolute;
+    top: -20px;
+    width: 40px;
+    left: 45%;
+    z-index: 10;
+}
+
+/* Media queries */
+@media screen and (min-width: 768px){
+    .cards{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .action:hover{
+        cursor: pointer;
+        color: #91cdeb;
+    }
+}
